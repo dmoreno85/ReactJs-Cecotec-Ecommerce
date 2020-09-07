@@ -1,0 +1,126 @@
+@import '../../styles.scss';
+
+.loginContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    transition: all 2s;
+    background: rgba(156, 156, 156, 0.6);
+
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        width: 300px;
+        max-width: 100%;
+        height: 300px;
+        max-height: 100%;
+        position: fixed;
+        z-index: 100;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        background: white;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.9);
+        border-radius: 5px;
+        border: 1px solid rgb(3, 3, 3);
+        padding: 1em;
+
+        @media (max-width: 340px) {
+            width: 250px;
+            height: 280px;
+
+            h1 {
+                font-size: 30px;
+
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        @media (max-width: 291px) {
+            width: 200px;
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width: 240px) {
+            width: 150px;
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        input {
+            all: unset;
+            padding: 0.8rem;
+            border-radius: 0.3em;
+            background-color: rgb(228, 224, 224);
+            color: black;
+            margin-bottom: 1.4em;
+
+            @media (max-width: 240px) {
+                text-align: center;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+
+            button {
+                all: unset;
+                text-align: center;
+                background-color: rgb(32, 219, 72);
+                border: 1px solid black;
+                border-radius: 4px;
+                padding: 5px;
+                margin: 5px;
+                width: 5em;
+                color: white;
+                text-shadow: 1px 1px 3px #413f3f;
+                max-width: 100%;
+                width: 10em;
+
+                @media (max-width: 240px) {
+                    width: 4.5em;
+                }
+            }
+
+            button:hover {
+                background-color: rgb(97, 219, 123);
+                text-shadow: 1px 1px 3px #080808;
+            }
+        }
+
+        .errorEmail {
+            position: absolute;
+            color: red;
+            bottom: 148px;
+        }
+
+        .errorPassword {
+            position: absolute;
+            color: red;
+            bottom: 79px;
+        }
+
+        .errorFormValidate {
+            position: absolute;
+            color: red;
+            bottom: 11px;
+        }
+
+    }
+
+}
