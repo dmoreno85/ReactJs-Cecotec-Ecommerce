@@ -1,0 +1,16 @@
+{
+  "name": "JSON-JSON_server_ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server-auth db.json -r routes.json  --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.16.1",
+    "json-server-auth": "^2.0.2"
+  }
+}

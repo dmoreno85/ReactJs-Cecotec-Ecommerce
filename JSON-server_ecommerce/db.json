@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$D0Nj0dSY.ZiUWW0lK8rDk.WWxSP6dW/VNCaF4V09aqX/A/Se6.Bu.",
+      "id": 1
+    }
+  ],
+  "userClients": [
+    {
+      "name": "ssss",
+      "email": "dmoreno788@gmail.com",
+      "phone": "666772840",
+      "city": "valencia",
+      "id": 20
+    },
+    {
+      "name": "jose luis",
+      "email": "joseluis@gmail.com",
+      "phone": "69858965",
+      "city": "barcelona",
+      "id": 21
+    }
+  ],
+  "products": [
+    {
+      "title": "Auriculares Gaming",
+      "description": "Logitech G432 Auriculares Gaming con Cable, Sonido 7.1 Surround, DTS Headphone:X 2.0, Transductores 50mm, USB y Jack Audio 3, 5mm, Microfóno Volteable, Peso Ligero, PC/Mac/Xbox One/PS4/Nintendo Switch",
+      "ref": "333",
+      "stock": "98",
+      "id": 1,
+      "price": "49,99",
+      "model": "Logitech G"
+      
+    },
+    {
+      "title": "Ordenador portátil",
+      "description": "HP Pavilion x360 - 14-dh1012ns - Ordenador portátil de 14 '' FullHD (Intel Core i5-10210U, 8GB RAM, 512GB SSD, Windows 10 Home 64) Plata natural - teclado QWERTY Español",
+      "ref": "667775",
+      "model": "HP",
+      "price": "749,99",
+      "stock": "788",
+      "id": 3
+    },
+    {
+      "title": "Ordenador portátil",
+      "description": "HP OMEN 15-dc1049ns - Ordenador portátil de 15.6'' FullHD IPS (Intel Core i5-9300H, 16GB RAM, 512GB SSD, Nvidia GTX1650-4GB, sin sistema operativo) negro sombra - Teclado QWERTY Español",
+      "ref": "66666",
+      "model": "HP",
+      "price": "849,99",
+      "stock": "9",
+      "id": 4
+    },
+    {
+      "title": "Webcam",
+      "description": "Webcam Full HD 1080p autofoco portátil Webcam micrófono Incorporado Sonido estéreo Dual Flexible Giratorio Clip Mini Plug and Play videollamada videoconferencias cámara de Ordenador Negro.",
+      "ref": "444",
+      "model": "Anivia",
+      "price": "29,64",
+      "stock": "48",
+      "id": 5
+    },
+    {
+      "title": "Ratón Gaming",
+      "description": "Logitech G402 Hyperion Fury Ratón Gaming con Cable, Seguimento Óptico 4,000 DPI, Peso Reducido, 8 Botones Programables, PC/Mac Negro",
+      "ref": "55481",
+      "model": "Logitech G",
+      "price": "39,99",
+      "stock": "80",
+      "id": 6
+    },
+    {
+      "title": "Volante de Carreras y Pedales",
+      "description": "Logitech G29 Driving Force Volante de Carreras y Pedales, Force Feedback, Aluminio Anodizado, Palancas de cambio, Volante de Cuero, Pedales Ajustables, Enchufe EU, PS4/PS3/PC/Mac, Negro",
+      "ref": "55",
+      "model": "Logitech G",
+      "price": "239,99",
+      "stock": "600",
+      "id": 7
+    },
+    {
+      "title": "Auriculares Gaming",
+      "description": "ONIKUMA Auriculares Gaming, Cascos PS4 con Sonido Envolvente 7.1, Cascos Xbox One con Micrófono con Cancelación de Ruido y luz LED, Orejeras de Memoria para PS4, PC, Xbox One (Adaptador no Incluido).",
+      "ref": "444",
+      "model": "ONIKUMA",
+      "price": "19,99",
+      "stock": "150",
+      "id": 8
+    },
+    {
+      "title": "Router",
+      "description": "TP-Link Archer MR600 Router 4G + Advanced LTE CAT6, Wi-Fi AC1200 5GHz & 2.4GHz, 4 Puertos Gigabit, 2 Antenas Desmontables, MicroSIM, Compatible con Todos los operadores.",
+      "ref": "444",
+      "model": "TP-Link",
+      "price": "134,80",
+      "stock": "996",
+      "id": 9
+    },
+    {
+      "title": "Ordenador Gaming",
+      "description": "DeepGaming Havak - Ordenador Gaming de sobremesa A-RGB (Intel Core i9-9900, 32GB RAM, 480GB SSD + 2TB HDD, Nvidia GTX1650 4GB DDR5, Sin Sistema Operativo) Color Negro.",
+      "ref": "12",
+      "model": "CoolBox",
+      "price": "1.305,94",
+      "stock": "236",
+      "id": 10
+    },
+    {
+      "title": "Ordenador de sobremesa",
+      "description": "Hyrican Onyx 6514 i5-9400F - Ordenador de sobremesa (16 GB, 480 GB, 1 TB, RTX 2060).",
+      "ref": "444",
+      "model": "Hyrican",
+      "price": "1.091,30",
+      "stock": "25",
+      "id": 11
+    },
+    {
+      "title": "Ordenador de sobremesa",
+      "description": "MSI Night Blade X2B - B5640096028G2T0DS10M Desktop-PC(Intel Core i5 6400, 8 GB RAM, 2 TB Disco Duro, NVIDIA GeForce GTX 960, Win 10 Home) Negro.",
+      "ref": "444",
+      "model": "MSI",
+      "price": "1.426,35",
+      "stock": "444",
+      "id": 12
+    },
+    {
+      "title": "Playstation 4 Slim",
+      "description": "Sony Playstation 4 Slim 500 GB.",
+      "ref": "444",
+      "model": "Sony",
+      "price": "323,83",
+      "stock": "42",
+      "id": 13
+    },
+    {
+      "title": "Consola de Videojuegos Clásicos",
+      "description": "SeeKool Pandora's 9D Juegos clásicos Consola de Videojuegos, 2700 in 1 Multijugador Arcade Game Console, 4 Joystick Partes de la Fuente de alimentación HDMI y VGA y Salida USB.",
+      "ref": "444",
+      "model": "SeeKool",
+      "price": "122,39",
+      "stock": "10",
+      "id": 14
+    },
+    {
+      "title": "consola de videojuegos retro",
+      "description": "Consola de videojuegos portátil, consola de videojuegos retro, pantalla HD de 4.3 pulgadas, consola de juegos clásica, videojuego portátil, consola de juegos nostálgica para niños y adultos.",
+      "ref": "444",
+      "model": "huasida",
+      "price": "39,68",
+      "stock": "33",
+      "id": 15
+    },
+    {
+      "title": "Monitor Curvo",
+      "description": "Samsung C27R500 - Monitor Curvo de 27 pulgadas sin marcos (Full HD, 4 ms, 60 Hz, FreeSync, LED, 16:9, 3000:1, 1800R, 178°, HDMI, Base en V) Gris Oscuro",
+      "ref": "444",
+      "model": "SAMSUNG",
+      "price": "147,93",
+      "stock": "33",
+      "id": 16
+     
+    },
+    {
+      "title": "Monitor ",
+      "description": "BenQ EW2780 - Monitor de 27 pulgadas FullHD (1920x1080, 5ms, 75Hz, 3x HDMI, IPS, HDRi, FreeSync, Altavoces, Eye-care, Sensor Brillo Inteligente, Flicker-free, antireflejos, sin marco, VESA) - Gris.",
+      "ref": "444",
+      "model": "BenQ",
+      "price": "199,00",
+      "stock": "9",
+      "id": 17
+    },
+    {
+      "title": "Tarjeta gráfica ",
+      "description": "MSI GeForce GTX 1660 Ventus XS 6g OC - Tarjeta gráfica Enthusiast.",
+      "ref": "444",
+      "model": "MSI",
+      "price": "207,90",
+      "stock": "60",
+      "id": 18
+    },
+    {
+      "title": "Disco duro sólido",
+      "description": "Kingston A400 SSD SA400S37/480G - Disco duro sólido interno 2.5 SATA 480GB.",
+      "ref": "444",
+      "model": "Kingston",
+      "price": "55,95",
+      "stock": "60",
+      "id": 19
+    }
+   
+  ]
+}

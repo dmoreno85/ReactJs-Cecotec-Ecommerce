@@ -16,9 +16,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "cd JSON-server_ecommerce && npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "npm run install:front && npm run install:mock",
+    "install:front": "npm install",
+    "install:mock": "cd JSON-server_ecommerce && npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
