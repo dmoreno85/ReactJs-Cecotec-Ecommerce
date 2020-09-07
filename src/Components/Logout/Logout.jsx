@@ -11,7 +11,10 @@ const Logout = () => {
         }
         return (
             <div className="logout">
+                <div className="center">
                 <a href="z" onClick={HandleLogout}>Salir</a>
+
+                </div>
             </div>
         )
     };

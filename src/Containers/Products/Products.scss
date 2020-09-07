@@ -318,7 +318,7 @@
         margin-top: 1em;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
         flex-flow: wrap;
 
         @media (max-width: 608px) {

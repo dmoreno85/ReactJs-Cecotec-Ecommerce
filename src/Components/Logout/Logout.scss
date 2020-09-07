@@ -1,8 +1,18 @@
+@import'../../styles.scss';
 .logout{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-right: 2em;
+    min-width: 6em;
+    .center{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+}
+.logout:hover{
+    background-color: $secondary-color;
 }

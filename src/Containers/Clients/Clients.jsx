@@ -34,7 +34,6 @@ class Clients extends React.Component {
   }
 
   componentDidMount() {
-    console.log("hola");
     this.getClientsList();
   }
 
