@@ -49,7 +49,6 @@
 
         .search {
             height: 1em;
-            // all: unset;
             border-color: rgb(153, 151, 151);
             padding: 0.5rem;
             border-radius: 0.3em;
@@ -110,6 +109,43 @@
             border: 1px solid rgb(3, 3, 3);
             padding: 1em;
 
+            @media (max-width: 560px) {
+                width: 450px;
+
+            }
+
+            @media (max-width: 516px) {
+                width: 400px;
+
+            }
+
+            @media (max-width: 455px) {
+                width: 350px;
+
+            }
+
+            @media (max-width: 400px) {
+                width: 300px;
+
+            }
+
+            @media (max-width: 354px) {
+                width: 250px;
+
+                h1 {
+                    font-size: 1.8em;
+                }
+            }
+
+            @media (max-width: 315px) {
+                width: 220px;
+                margin-left: 0;
+
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+
             .modalHeader {
                 display: flex;
                 justify-content: center;
@@ -149,6 +185,11 @@
             .modalButton {
                 display: flex;
                 justify-content: flex-end;
+
+                @media (max-width: 455px) {
+                    justify-content: space-between;
+
+                }
 
                 .btnDelete {
                     background-color: $btn-color-cancel;
@@ -191,6 +232,16 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 338px;
+
+                @media (max-width: 354px) {
+                    font-size: 0.9em;
+                    bottom: 342px;
+                }
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 349px;
+                }
             }
 
             .errorDescription {
@@ -198,13 +249,16 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 254px;
-            }
 
-            .errorRef {
-                position: fixed;
-                margin-top: 0px;
-                color: red;
-                bottom: 269px;
+                @media (max-width: 354px) {
+                    font-size: 0.9em;
+                    bottom: 258px;
+                }
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 265px;
+                }
             }
 
             .errorModel {
@@ -212,6 +266,16 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 197px;
+
+                @media (max-width: 354px) {
+                    font-size: 0.9em;
+                    bottom: 202px;
+                }
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 209px;
+                }
             }
 
             .errorPrice {
@@ -219,6 +283,16 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 138px;
+
+                @media (max-width: 354px) {
+                    font-size: 0.9em;
+                    bottom: 144px;
+                }
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 151px;
+                }
             }
 
             .errorStock {
@@ -226,6 +300,16 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 79px;
+
+                @media (max-width: 354px) {
+                    font-size: 0.9em;
+                    bottom: 86px;
+                }
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 94px;
+                }
             }
         }
     }
@@ -279,15 +363,18 @@
 
             }
 
-
             .head {
                 text-transform: capitalize;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                background-color: $terciary-color;
+                background-color: $quaternary-color;
                 height: 3rem;
+
+                h3 {
+                    font-size: 1em;
+                }
             }
 
             .btn {

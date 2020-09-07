@@ -124,7 +124,7 @@
 
             }
 
-            @media (max-width: 455px) {
+            @media (max-width: 400px) {
                 width: 300px;
 
             }
@@ -137,6 +137,10 @@
             @media (max-width: 315px) {
                 width: 220px;
                 margin-left: 0;
+
+                h1 {
+                    font-size: 1.5em;
+                }
             }
 
             .modalHeader {
@@ -163,6 +167,11 @@
             .modalButton {
                 display: flex;
                 justify-content: flex-end;
+
+                @media (max-width: 455px) {
+                    justify-content: space-between;
+
+                }
 
                 .btnDelete {
                     background-color: $btn-color-cancel;
@@ -194,15 +203,27 @@
                     width: 5em;
                     color: white;
                     text-shadow: 1px 1px 3px #413f3f;
+
+                    @media (max-width: 315px) {
+                        width: 4em;
+                        padding: 4px;
+                        margin: 4px;
+                    }
                 }
 
             }
+
 
             .errorName {
                 position: fixed;
                 margin-top: 0px;
                 color: red;
                 bottom: 232px;
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 240px;
+                }
             }
 
             .errorEmail {
@@ -210,6 +231,11 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 172px;
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 182px;
+                }
             }
 
             .errorPhone {
@@ -217,6 +243,11 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 113px;
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 125px;
+                }
             }
 
             .errorCity {
@@ -224,6 +255,11 @@
                 margin-top: 0px;
                 color: red;
                 bottom: 55px;
+
+                @media (max-width: 315px) {
+                    font-size: 0.8em;
+                    bottom: 68px;
+                }
             }
         }
     }
@@ -285,6 +321,7 @@
                 width: 100%;
                 background-color: $terciary-color;
                 height: 3rem;
+
             }
 
             .btn {

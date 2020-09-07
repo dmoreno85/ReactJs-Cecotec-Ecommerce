@@ -106,19 +106,50 @@
         .errorEmail {
             position: absolute;
             color: red;
-            bottom: 148px;
+            bottom: 141px;
+
+            @media (max-width: 340px) {
+                font-size: 0.9em;
+                bottom: 134px;
+            }
+
+            @media (max-width: 240px) {
+                font-size: 0.8em;
+                bottom: 145px;
+            }
+
         }
 
         .errorPassword {
             position: absolute;
             color: red;
-            bottom: 79px;
+            bottom: 75px;
+
+            @media (max-width: 340px) {
+                font-size: 0.9em;
+                bottom: 65px;
+            }
+
+            @media (max-width: 240px) {
+                font-size: 0.8em;
+                bottom: 68px;
+            }
         }
 
         .errorFormValidate {
             position: absolute;
             color: red;
-            bottom: 11px;
+            bottom: 206px;
+
+            @media (max-width: 340px) {
+                font-size: 0.9em;
+                bottom: 201px;
+            }
+
+            @media (max-width: 240px) {
+                font-size: 0.8em;
+                bottom: 213px;
+            }
         }
 
     }

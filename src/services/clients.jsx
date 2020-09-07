@@ -8,8 +8,6 @@ export const getClients = async (e) => {
         Authorization: "Bearer " + token,
       },
     });
-
-    // console.log(res.data);
     return res;
   } catch (error) {
     console.log(error);
