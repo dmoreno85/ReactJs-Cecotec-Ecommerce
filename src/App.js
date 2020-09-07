@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Clients from "./Containers/Clients/Clients";
 import Login from "./Containers/Login/Login";
 import PrizateZone from "./Containers/Login/PrivateZone";
+import Products from './Containers/Products/Products';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Header />
               <Route path="/" component={Clients} exact />
               <Route path="/clients" component={Clients} exact />
+               <Route path="/products" component={Products} exact />
             </PrizateZone>
           </Switch>
         </div>

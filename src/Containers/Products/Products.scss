@@ -1,0 +1,386 @@
+@import '../../styles.scss';
+
+.products {
+
+    .btnAddProducts {
+        all: unset;
+        text-align: center;
+        background-color: $btn-color-add;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 5px;
+        margin-left: 1em;
+        margin-top: 1em;
+        width: 10em;
+        color: white;
+        text-shadow: 1px 1px 3px #413f3f;
+    }
+
+    .btnAddProducts:hover {
+        background-color: $btn-color-add-hover;
+        text-shadow: 1px 1px 3px #080808;
+    }
+
+    .addSearch {
+
+        display: flex;
+        align-items: flex-end;
+
+        @media (max-width: 608px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 442px) {
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (max-width: 290px) {
+            button {
+                margin-left: 0;
+            }
+
+        }
+
+        .search {
+            height: 1em;
+            // all: unset;
+            border-color: rgb(153, 151, 151);
+            padding: 0.5rem;
+            border-radius: 0.3em;
+            background-color: $search-bg-color;
+            color: black;
+            margin-left: 2rem;
+
+            @media (max-width: 608px) {
+                margin-left: 1em;
+                margin-top: 1rem;
+                width: 154px;
+
+            }
+
+            @media (max-width: 442px) {
+                margin-left: 1em;
+                margin-top: 1rem;
+                width: 154px;
+
+            }
+
+            @media (max-width: 315px) {
+                margin-left: 0;
+                margin-top: 1rem;
+
+            }
+
+        }
+
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+        transition: all 2s;
+        background: rgba(0, 0, 0, 0.6);
+
+        .modalContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 510px;
+            max-width: 100%;
+            height: 480px;
+            max-height: 100%;
+            position: relative;
+            z-index: 100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+            border: 1px solid rgb(3, 3, 3);
+            padding: 1em;
+
+            .modalHeader {
+                display: flex;
+                justify-content: center;
+            }
+
+            input {
+                all: unset;
+                padding: 0.5rem;
+                border-radius: 0.3em;
+                background-color: $input-bg-color;
+                color: black;
+                margin-bottom: 1.4em;
+            }
+
+            textArea {
+
+                border-color: transparent;
+                resize: none;
+                overflow-x: hidden;
+                padding: 0.5rem;
+                border-radius: 0.3em;
+                background-color: $textarea-bg-color;
+                color: black;
+                margin-bottom: 1.5em;
+            }
+
+            textarea:focus {
+                outline: none;
+            }
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            .modalButton {
+                display: flex;
+                justify-content: flex-end;
+
+                .btnDelete {
+                    background-color: $btn-color-cancel;
+                    border: 1px solid black;
+                }
+
+                .btnEdit {
+                    background-color: $btn-color-send;
+                    border: 1px solid black;
+                }
+
+                .btnEdit:hover {
+                    background-color: $btn-color-send-hover;
+                    text-shadow: 1px 1px 3px #080808;
+                }
+
+                .btnDelete:hover {
+                    background-color: $btn-color-cancel-hover;
+                    text-shadow: 1px 1px 3px #080808;
+                }
+
+                button {
+                    all: unset;
+                    text-align: center;
+
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 5em;
+                    color: white;
+                    text-shadow: 1px 1px 3px #413f3f;
+                }
+
+
+            }
+
+            .errorTitle {
+                position: absolute;
+                margin-top: 0px;
+                color: red;
+                bottom: 338px;
+            }
+
+            .errorDescription {
+                position: fixed;
+                margin-top: 0px;
+                color: red;
+                bottom: 254px;
+            }
+
+            .errorRef {
+                position: fixed;
+                margin-top: 0px;
+                color: red;
+                bottom: 269px;
+            }
+
+            .errorModel {
+                position: fixed;
+                margin-top: 0px;
+                color: red;
+                bottom: 197px;
+            }
+
+            .errorPrice {
+                position: fixed;
+                margin-top: 0px;
+                color: red;
+                bottom: 138px;
+            }
+
+            .errorStock {
+                position: fixed;
+                margin-top: 0px;
+                color: red;
+                bottom: 79px;
+            }
+        }
+    }
+
+    .cardContainer {
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        flex-flow: wrap;
+
+        @media (max-width: 608px) {
+            justify-content: center;
+            margin-left: -13px;
+
+        }
+
+        @media (max-width: 451px) {
+            justify-content: center; // margin-left: -13px;
+
+        }
+
+        @media (max-width: 321px) {
+            justify-content: center; // margin-left: -13px;
+        }
+
+        @media (max-width: 290px) {
+            justify-content: center;
+            margin-left: 0;
+        }
+
+        .card {
+            overflow: auto;
+            box-shadow: 0px 2px 8px 0px #a4a5a5;
+            background-color: $card-bg-color;
+            margin-bottom: 50px;
+            transition: 0.3s;
+            min-height: 350px;
+            min-width: 280px;
+            max-width: 280px;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            border-radius: 2px 2px 0 0;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 290px) {
+                margin-left: 0;
+                min-width: 270px;
+                max-width: 280px;
+
+            }
+
+
+            .head {
+                text-transform: capitalize;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: $terciary-color;
+                height: 3rem;
+            }
+
+            .btn {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 0.5rem;
+
+                .btnDelete {
+                    background-color: $btn-color-cancel;
+                    border: 1px solid black;
+                }
+
+                .btnEdit {
+                    background-color: $btn-color-send;
+                    border: 1px solid black;
+                }
+
+                button {
+                    all: unset;
+                    text-align: center;
+                    border-radius: 4px;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 5em;
+                    color: white;
+                    text-shadow: 1px 1px 3px #413f3f;
+                }
+
+                .btnEdit:hover {
+                    background-color: $btn-color-send-hover;
+                    text-shadow: 1px 1px 3px #080808;
+                }
+
+                .btnDelete:hover {
+                    background-color: $btn-color-cancel-hover;
+                    text-shadow: 1px 1px 3px #080808;
+                }
+
+            }
+
+            .items {
+                display: flex;
+                flex-direction: column;
+
+                .description {
+                    border-radius: 2px;
+                    word-wrap: break-word;
+                    min-height: 150px;
+                    background-color: $card-description-bgcolor;
+                    margin: 0.5rem 0.8rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+
+                }
+
+                .model {
+                    text-transform: capitalize;
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    margin: 0rem 0.8rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+                    font-weight: bold;
+                    margin: 0rem 0.8rem;
+                }
+
+                .stock {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0rem 0.8rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            transition: 0.2s ease-out;
+        }
+
+
+    }
+
+}
