@@ -1,0 +1,69 @@
+@import '../../styles.scss';
+
+.header {
+    height: 3em;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 400px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 350px) {
+        font-size: 13px;
+    }
+
+    a {
+        all: unset;
+        color: white;
+        cursor: pointer;
+    }
+
+    .menuHeader {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        align-items: center;
+        min-width: 15em;
+
+        @media (max-width: 350px) {
+            justify-content: flex-start;
+        }
+
+        .userClientsList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 350px) {
+                font-size: 13px;
+                max-width: 6em;
+            }
+        }
+
+        .userClientsList:active {
+            background-color: $menu-active-color;
+        }
+
+        .productsList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            @media (max-width: 350px) {
+                font-size: 13px;
+                max-width: 6em;
+            }
+        }
+
+        .productsList:active {
+            background-color: $menu-active-color;
+        }
+
+    }
+}
