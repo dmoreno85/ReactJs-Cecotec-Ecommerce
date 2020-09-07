@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+// FONTS
+$font-general: 'Montserrat', sans-serif;
+
+// COLORS
+$primary-color: grey;
+$secondary-color:tomato;
+
+// color header cards 
+$terciary-color:#929596;
+
+// colors buttons 
+$btn-color-send:rgb(32, 219, 72);
+$btn-color-send-hover:rgb(97, 219, 123);
+$btn-color-cancel:#f82541;
+$btn-color-cancel-hover:#f37586;
+$btn-color-add:rgb(32, 219, 72);
+$btn-color-add-hover:rgb(97, 219, 123);
+
+// color card 
+$card-bg-color:white;
+$card-description-bgcolor:rgb(239, 238, 241);
+
+// color textarea & input
+$textarea-bg-color:rgb(228, 224, 224);
+$input-bg-color:rgb(228, 224, 224);
+
+// color search 
+$search-bg-color:rgb(255, 250, 250);
+
+// color header 
+$menu-active-color: rgb(245, 136, 117);
+
+:export {
+    bgmenu: $secondary-color;
+}
