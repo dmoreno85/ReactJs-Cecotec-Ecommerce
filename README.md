@@ -5,3 +5,5 @@ En terminal, ejecuta:
 En otra pestaña de terminal, ejecuta:
 ### `npm start`
 
+Usuario: admin@admin.com
+Contraseña: adminpassword
