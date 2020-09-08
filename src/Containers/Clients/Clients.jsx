@@ -29,6 +29,7 @@ class Clients extends React.Component {
       errorCity: "",
       search: "",
       CLIENTS: [],
+      errorService:false
     };
     this.emailInput = React.createRef();
   }
@@ -109,7 +110,9 @@ class Clients extends React.Component {
   };
 
   getClientsList = async () => {
-    await getClients().then((res) => this.setState({ CLIENTS: res.data }));
+    await getClients()
+    .then((res) => this.setState({ CLIENTS: res.data, errorService:false }))
+    .catch((error)=>this.setState({errorService:true}))
   };
   validateForm = async () => {
     return new Promise((resolve, reject) => {
@@ -174,6 +177,7 @@ class Clients extends React.Component {
             handleSearch={(e) => this.handleChange(e)}
             search={this.state.search}
           />
+       {this.state.errorService && <div className="errorService">Error de conexión con el servidor</div>}   
         </div>
         {this.state.showModal && (
           <div className="modal" id="modal">

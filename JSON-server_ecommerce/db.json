@@ -8,7 +8,7 @@
   ],
   "userClients": [
     {
-      "name": "ssss",
+      "name": "susana",
       "email": "dmoreno788@gmail.com",
       "phone": "666772840",
       "city": "valencia",
@@ -20,6 +20,62 @@
       "phone": "69858965",
       "city": "barcelona",
       "id": 21
+    },
+    {
+      "name": "pedro",
+      "email": "pedro@email.com",
+      "phone": "69987456",
+      "city": "pamplona",
+      "id": 22
+    },
+    {
+      "name": "sebastián",
+      "email": "sc5562@gmail.com",
+      "phone": "698589663",
+      "city": "elche de la sierra",
+      "id": 23
+    },
+    {
+      "name": "Stephanie",
+      "email": "fsrubio86@gmail.com",
+      "phone": "687787845",
+      "city": "alicante",
+      "id": 24
+    },
+    {
+      "name": "pablo",
+      "email": "pablo@gmail.com",
+      "phone": "698566589",
+      "city": "madrid",
+      "id": 25
+    },
+    {
+      "name": "john",
+      "email": "js2@hotmail.com",
+      "phone": "789696526",
+      "city": "londres",
+      "id": 26
+    },
+    {
+      "name": "sonia",
+      "email": "soni@gmail.com",
+      "phone": "669859589",
+      "city": "ferrol",
+      "id": 27
+    },
+    {
+      "name": "valeria",
+      "email": "vmore@gmail.com",
+      "phone": "698695885",
+      "city": "picanya",
+      "id": 28
+    },
+    {
+      "name": "chencho",
+      "email": "chenchorrio@gmail.com",
+      "phone": "689744152",
+      "city": "albacete",
+      "id": 29
     }
   ],
   "products": [
@@ -31,7 +87,6 @@
       "id": 1,
       "price": "49,99",
       "model": "Logitech G"
-      
     },
     {
       "title": "Ordenador portátil",
@@ -80,7 +135,7 @@
     },
     {
       "title": "Auriculares Gaming",
-      "description": "ONIKUMA Auriculares Gaming, Cascos PS4 con Sonido Envolvente 7.1, Cascos Xbox One con Micrófono con Cancelación de Ruido y luz LED, Orejeras de Memoria para PS4, PC, Xbox One (Adaptador no Incluido).",
+      "description": "ONIKUMA Auriculares Gaming, Cascos PS4 con Sonido Envolvente 7.1, Cascos Xbox One con Micrófono con Cancelación de Ruido y luz LED, Orejeras de Memoria para PS4, PC, Xbox One.",
       "ref": "444",
       "model": "ONIKUMA",
       "price": "19,99",
@@ -158,7 +213,6 @@
       "price": "147,93",
       "stock": "33",
       "id": 16
-     
     },
     {
       "title": "Monitor ",
@@ -187,6 +241,5 @@
       "stock": "60",
       "id": 19
     }
-   
   ]
 }

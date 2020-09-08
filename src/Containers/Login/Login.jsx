@@ -13,6 +13,7 @@ class Login extends React.Component {
       errorPassword: "",
       emailValidate: false,
       passwordValidate: false,
+      errorService:false
     };
     this.emailInput = React.createRef();
   }
@@ -37,9 +38,11 @@ class Login extends React.Component {
               errorFormValidate: "El email y/o la contraseña son incorrectas.",
             });
           }
-        })
+        }
+        
+        )
         .catch((error) => {
-          console.log(error);
+           this.setState({ errorService: true });
         });
     }
   };
@@ -75,6 +78,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className="loginContainer">
+        
         <form className="loginForm" onSubmit={this.handleSubmit}>
           <h1>Inicia sesión</h1>
           <input
@@ -98,7 +102,11 @@ class Login extends React.Component {
             {" "}
             <button type="submit">Enviar</button>
           </div>
-
+          {this.state.errorService && (
+            <div className="errorService">
+              Error de conexión con el servidor
+            </div>
+          )}
           <div className="errorFormValidate">
             {" "}
             {this.state.errorFormValidate}{" "}

@@ -30,6 +30,7 @@ class Products extends React.Component {
       errorStock: "",
       search: "",
       PRODUCTS: [],
+      errorService: false,
     };
   }
 
@@ -113,7 +114,9 @@ class Products extends React.Component {
   };
 
   getProductList = async () => {
-    await getProducts().then((res) => this.setState({ PRODUCTS: res.data }));
+    await getProducts()
+      .then((res) => this.setState({ PRODUCTS: res.data, errorService: false }))
+      .catch((error) => this.setState({ errorService: true }));
   };
   validateForm = () => {
     return new Promise((resolve, reject) => {
@@ -182,6 +185,11 @@ class Products extends React.Component {
             handleSearch={(e) => this.handleChange(e)}
             search={this.state.search}
           />
+          {this.state.errorService && (
+            <div className="errorService">
+              Error de conexión con el servidor
+            </div>
+          )}
         </div>
         {this.state.showModal && (
           <div className="modal" id="modal">

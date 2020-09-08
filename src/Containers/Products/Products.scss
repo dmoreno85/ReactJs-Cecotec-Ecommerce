@@ -46,6 +46,15 @@
             }
 
         }
+        .errorService{
+            color:red;
+            margin-left: 2rem;
+            margin-bottom: 0.5em;
+            @media (max-width: 608px) {
+               margin-top: 0.5em;
+            }
+        }
+
 
         .search {
             height: 1em;

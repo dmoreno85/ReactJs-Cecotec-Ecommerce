@@ -24,6 +24,7 @@
     .addSearch {
 
         display: flex;
+        justify-content: flex-start;
         align-items: flex-end;
 
         @media (max-width: 608px) {
@@ -45,6 +46,15 @@
                 margin-left: 0;
             }
 
+        }
+
+        .errorService{
+            color:red;
+            margin-left: 2rem;
+            margin-bottom: 0.5em;
+            @media (max-width: 608px) {
+               margin-top: 0.5em;
+            }
         }
 
         .search {

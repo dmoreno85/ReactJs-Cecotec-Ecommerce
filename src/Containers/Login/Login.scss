@@ -120,6 +120,24 @@
 
         }
 
+        .errorService {
+            position: absolute;
+            color: red;
+            bottom: 10px;
+
+            @media (max-width: 340px) {
+                font-size: 0.9em;
+                bottom: 6px;
+            }
+
+            @media (max-width: 292px) {
+                font-size: 0.9em;
+                bottom: -2px;
+                text-align: center;
+            }
+
+        }
+
         .errorPassword {
             position: absolute;
             color: red;
