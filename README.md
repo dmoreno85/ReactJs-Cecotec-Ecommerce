@@ -1,7 +1,7 @@
 Proyecto realizado con React y Json-Server.
 
 Para instalar dependencias, ejecuta:
-### `npm postinstall`
+### `npm run postinstall`
 Después, ejecuta:
 ### `npm run server`
 En otra pestaña de terminal, ejecuta:
